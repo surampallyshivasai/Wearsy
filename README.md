@@ -255,4 +255,4 @@ This project is licensed under the ISC License.
 
 ---
 
-**Happy Shopping! 🛒✨**
+**Crafted by 🧑‍💻 Shiva Sai**
