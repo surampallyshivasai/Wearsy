@@ -1,0 +1,50 @@
+.admin-page {
+  padding: 50px;
+  padding-top: 100px; /* Add top padding for fixed navbar */
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.admin-page h2 {
+  pointer-events: none;
+}
+
+.admin-home-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  pointer-events: auto;
+}
+
+.admin-table {
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+  background-color: rgba(42, 42, 42, 0.9);
+  color: white;
+  pointer-events: auto;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: rgba(68, 68, 68, 0.9);
+}
+
+.admin-table select {
+  pointer-events: auto;
+}

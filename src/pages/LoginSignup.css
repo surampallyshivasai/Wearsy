@@ -1,0 +1,24 @@
+/* src/pages/LoginSignup.css */
+.auth-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.auth-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

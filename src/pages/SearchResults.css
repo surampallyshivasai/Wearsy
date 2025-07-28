@@ -1,0 +1,25 @@
+.search-results {
+  padding: 20px;
+  padding-top: 80px; /* Add top padding for fixed navbar */
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1f1f 0%, #2d2d2d 100%);
+}
+
+.search-heading {
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.no-results {
+  font-size: 18px;
+  color: #ccc;
+}

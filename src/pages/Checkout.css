@@ -1,0 +1,181 @@
+.checkout-page {
+  max-width: 800px;
+  margin: 100px auto;
+  margin-top: 120px; /* Adjust for fixed navbar */
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.checkout-page h2 {
+  text-align: center;
+  color: #28a745;
+  margin-bottom: 30px;
+}
+
+/* Saved Addresses Section */
+.saved-addresses-section {
+  margin-bottom: 30px;
+}
+
+.toggle-saved-addresses {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.toggle-saved-addresses:hover {
+  background-color: #0056b3;
+}
+
+.saved-addresses-list {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.saved-addresses-list h3 {
+  color: #495057;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.saved-address-item {
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.address-info {
+  flex: 1;
+}
+
+.address-info p {
+  margin: 5px 0;
+  color: #495057;
+  font-size: 14px;
+}
+
+.address-info p strong {
+  color: #212529;
+  font-size: 16px;
+}
+
+.saved-date {
+  color: #6c757d !important;
+  font-size: 12px !important;
+  font-style: italic;
+}
+
+.address-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+.use-address-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.use-address-btn:hover {
+  background-color: #218838;
+}
+
+.delete-address-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.delete-address-btn:hover {
+  background-color: #c82333;
+}
+
+/* Shipping Form */
+.shipping-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.shipping-form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.shipping-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Checkout Actions */
+.checkout-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.save-address-btn {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.save-address-btn:hover {
+  background-color: #138496;
+}
+
+.confirm-order-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.confirm-order-btn:hover {
+  background-color: #218838;
+}

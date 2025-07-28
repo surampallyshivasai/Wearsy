@@ -1,0 +1,56 @@
+/* Home.css */
+
+.home-container {
+  width: 100vw;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(31, 31, 31, 0.7), rgba(31, 31, 31, 0.7)),
+    url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 40px 20px; /* Added top padding for fixed navbar */
+  box-sizing: border-box;
+}
+
+.category-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-card {
+  width: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.category-image {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  object-fit: cover;  /* 🛠️ Show full image */
+  background-color: #fff;
+}
+
+.category-label {
+  font-weight: bold;
+  color: #111;
+  padding: 12px 0;
+  font-size: 20px;
+  background-color: white;
+}

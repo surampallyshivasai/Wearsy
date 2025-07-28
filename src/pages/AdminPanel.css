@@ -1,0 +1,93 @@
+.admin-panel {
+  padding: 40px;
+  padding-top: 100px; /* Add top padding for fixed navbar */
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.admin-panel h2 {
+  font-size: 2.5rem;
+  color: #4fc3f7;
+  margin-bottom: 30px;
+  pointer-events: none;
+}
+
+.admin-actions {
+  pointer-events: auto;
+}
+
+.admin-actions button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-actions button:hover {
+  background-color: #283593;
+}
+
+.admin-panel-login {
+  max-width: 350px;
+  margin: 80px auto;
+  margin-top: 120px; /* Adjust for fixed navbar */
+  background: rgba(35, 39, 47, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 32px 24px 24px 24px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  pointer-events: auto;
+  min-height: 300px;
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.admin-password-input {
+  background: #181a1f;
+  color: #fff;
+  border: 1.5px solid #00d4ff;
+  border-radius: 7px;
+  padding: 10px 14px;
+  font-size: 1rem;
+}
+
+.admin-login-form button {
+  background: #00d4ff;
+  color: #181a1f;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.admin-login-form button:hover {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.admin-login-error {
+  color: #ff4d4f;
+  margin-top: 10px;
+  font-weight: 600;
+}

@@ -1,0 +1,76 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  padding-top: 80px; /* Add top padding to account for fixed navbar */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.order-confirmation-page {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.order-confirmation-page h2 {
+  text-align: center;
+  color: #28a745;
+  margin-bottom: 30px;
+}
+
+.order-confirmation-page p,
+.order-confirmation-page li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.order-confirmation-page ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.order-confirmation-page h3 {
+  margin-top: 30px;
+  color: #555;
+}
