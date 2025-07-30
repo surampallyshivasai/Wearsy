@@ -1,31 +1,27 @@
 // src/pages/Signup.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
 import './AuthForm.css';
 
 const Signup = () => {
-  const { register } = useAuth();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const [error, setError] = useState('');
 
-  const handleSignup = async (e) => {
+  const handleSignup = (e) => {
     e.preventDefault();
-    setError(''); // Clear previous errors
-    
-    try {
-      const result = await register(name, email, password);
-      if (result.success) {
-        navigate('/');
-      } else {
-        setError(result.error || 'Registration failed');
-      }
-    } catch (error) {
-      setError('Registration failed. Please try again.');
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const exists = users.find((user) => user.email === email);
+    if (exists) {
+      setError('Email already registered');
+      return;
     }
+
+    const newUser = { name, email, password };
+    localStorage.setItem('users', JSON.stringify([...users, newUser]));
+    navigate('/login');
   };
 
   return (

@@ -11,19 +11,13 @@ const Login = () => {
   const navigate = useNavigate();
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setError(''); // Clear previous errors
-    
-    try {
-      const result = await login(email, password);
-      if (result.success) {
-        navigate('/');
-      } else {
-        setError(result.error || 'Invalid email or password');
-      }
-    } catch (error) {
-      setError('Login failed. Please try again.');
+    const success = login(email, password);
+    if (success) {
+      navigate('/');
+    } else {
+      setError('Invalid email or password');
     }
   };
 
